@@ -15,5 +15,11 @@ namespace linkpoint_wrapper
             LinkPointTxn txn = new LinkPointTxn();
             return txn.send(CertificatePath, Host, Port, XML);
         }
+
+        public static string GetVersion()
+        {
+            LinkPointTxn txn = new LinkPointTxn();
+            return txn.getVersion() as string;
+        }
     }
 }
