@@ -42,6 +42,7 @@
     <Compile Include="LinkpointEntities\Billing.cs" />
     <Compile Include="LinkpointEntities\ILinkpointEntity.cs" />
     <Compile Include="LinkpointEntities\MerchantInfo.cs" />
+    <Compile Include="LinkpointEntities\Shipping.cs" />
     <Compile Include="LinkpointServer.cs" />
     <Compile Include="LinkpointWrapperHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
