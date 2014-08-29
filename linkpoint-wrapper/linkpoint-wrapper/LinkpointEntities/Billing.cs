@@ -53,7 +53,7 @@ namespace linkpoint_wrapper.LinkpointEntities
                 {
                     return Regex.Match(Address1, @"\d+").Value;
                 }
-                catch (Exception ex)
+                catch
                 {
                     return "";
                 }
