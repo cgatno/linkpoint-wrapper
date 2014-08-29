@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LinkpointConstants\TransactionOrigin.cs" />
     <Compile Include="LinkpointEntities\Billing.cs" />
     <Compile Include="LinkpointEntities\ILinkpointEntity.cs" />
     <Compile Include="LinkpointEntities\MerchantInfo.cs" />
