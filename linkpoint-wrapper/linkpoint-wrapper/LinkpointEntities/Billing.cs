@@ -82,7 +82,7 @@ namespace linkpoint_wrapper.LinkpointEntities
 
         private const string BILLING_TAG = "billing";
 
-        public string GetEntityXML()
+        public string EntityXML()
         {
             StringBuilder outputBuilder = new StringBuilder();
 

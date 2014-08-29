@@ -8,6 +8,6 @@ namespace linkpoint_wrapper.LinkpointEntities
 {
     interface ILinkpointEntity
     {
-        string GetEntityXML();
+        string EntityXML();
     }
 }

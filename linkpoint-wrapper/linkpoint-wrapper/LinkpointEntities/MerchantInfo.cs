@@ -35,7 +35,7 @@ namespace linkpoint_wrapper.LinkpointEntities
 
         private const string MERCHANT_INFO_TAG = "merchantinfo";
 
-        public string GetEntityXML()
+        public string EntityXML()
         {
             StringBuilder outputBuilder = new StringBuilder();
 
