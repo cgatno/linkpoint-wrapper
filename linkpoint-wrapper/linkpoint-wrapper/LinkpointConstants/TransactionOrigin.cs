@@ -8,14 +8,14 @@ namespace linkpoint_wrapper.LinkpointConstants
 {
     public sealed class TransactionOrigin
     {
-        private readonly String value;
+        private readonly string value;
 
         public static readonly TransactionOrigin EmailInternet = new TransactionOrigin("ECI");
         public static readonly TransactionOrigin MailOrderPhoneOrder = new TransactionOrigin("MOTO");
         public static readonly TransactionOrigin PhoneOrder = new TransactionOrigin("TELEPHONE");
         public static readonly TransactionOrigin RetailFaceToFace = new TransactionOrigin("RETAIL");
         
-        private TransactionOrigin(String value)
+        private TransactionOrigin(string value)
         {
             this.value = value;
         }
