@@ -47,6 +47,7 @@
     <Compile Include="LinkpointEntities\ILinkpointEntity.cs" />
     <Compile Include="LinkpointEntities\MerchantInfo.cs" />
     <Compile Include="LinkpointEntities\OrderOptions.cs" />
+    <Compile Include="LinkpointEntities\Payment.cs" />
     <Compile Include="LinkpointEntities\Shipping.cs" />
     <Compile Include="LinkpointEntities\TransactionDetails.cs" />
     <Compile Include="LinkpointServer.cs" />
