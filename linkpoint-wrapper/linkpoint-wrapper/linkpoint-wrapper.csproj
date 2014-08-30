@@ -39,11 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LinkpointConstants\CardCodeStatus.cs" />
     <Compile Include="LinkpointConstants\OrderMode.cs" />
     <Compile Include="LinkpointConstants\OrderType.cs" />
     <Compile Include="LinkpointConstants\TerminalType.cs" />
     <Compile Include="LinkpointConstants\TransactionOrigin.cs" />
     <Compile Include="LinkpointEntities\Billing.cs" />
+    <Compile Include="LinkpointEntities\CreditCard.cs" />
     <Compile Include="LinkpointEntities\ILinkpointEntity.cs" />
     <Compile Include="LinkpointEntities\MerchantInfo.cs" />
     <Compile Include="LinkpointEntities\OrderOptions.cs" />
