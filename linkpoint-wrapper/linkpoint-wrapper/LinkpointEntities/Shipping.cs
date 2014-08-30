@@ -71,7 +71,7 @@ namespace linkpoint_wrapper.LinkpointEntities
                 writer.WriteElementString(ITEM_WEIGHT_TAG, ItemWeight.ToString());
                 writer.WriteElementString(NUMBER_OF_ITEMS_TAG, NumberOfItems.ToString());
                 writer.WriteElementString(CARRIER_ID_TAG, CarrierID.ToString());
-                writer.WriteElementString(ORDER_TOTAL_TAG, String.Format("{0:C2}", Convert.ToInt32(OrderTotal)).Remove(0,1));
+                writer.WriteElementString(ORDER_TOTAL_TAG, LinkpointWrapperHelper.LinkpointMoneyFormat(OrderTotal));
 
                 writer.WriteEndElement();
                 writer.WriteEndDocument();

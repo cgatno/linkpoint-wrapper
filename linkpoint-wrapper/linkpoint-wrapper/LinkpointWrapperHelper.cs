@@ -55,5 +55,10 @@ namespace linkpoint_wrapper
             this.LinkpointHostname = LinkpointHostname;
             this.SecurityCertificatePath = SecurityCertificatePath;
         }
+
+        public static string LinkpointMoneyFormat(decimal MoneyAmount)
+        {
+            return string.Format("{0:C0}", Convert.ToInt32(MoneyAmount)).Remove(0, 1);
+        }
     }
 }
