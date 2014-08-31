@@ -91,19 +91,19 @@ namespace linkpoint_wrapper.LinkpointEntities
                 writer.WriteStartDocument();
                 writer.WriteStartElement(BILLING_TAG);
 
-                writer.WriteElementString(NAME_TAG, Name);
-                writer.WriteElementString(COMPANY_TAG, Company);
-                writer.WriteElementString(ADDRESS_1_TAG, Address1);
-                writer.WriteElementString(ADDRESS_2_TAG, Address2);
-                writer.WriteElementString(CITY_TAG, City);
-                writer.WriteElementString(STATE_PROVINCE_TAG, StateProvince);
-                writer.WriteElementString(ZIP_CODE_TAG, ZipCode);
-                writer.WriteElementString(COUNTRY_TAG, Country);
-                writer.WriteElementString(PHONE_NUMBER_TAG, PhoneNumber);
-                writer.WriteElementString(FAX_NUMBER_TAG, FaxNumber);
-                writer.WriteElementString(EMAIL_TAG, Email);
-                writer.WriteElementString(ADDRESS_NUMBER_TAG, AddressNumber);
-                writer.WriteElementString(USER_ID_TAG, UserID);
+                if (!string.IsNullOrWhiteSpace(Name)) writer.WriteElementString(NAME_TAG, Name);
+                if (!string.IsNullOrWhiteSpace(Company)) writer.WriteElementString(COMPANY_TAG, Company);
+                if (!string.IsNullOrWhiteSpace(Address1)) writer.WriteElementString(ADDRESS_1_TAG, Address1);
+                if (!string.IsNullOrWhiteSpace(Address2)) writer.WriteElementString(ADDRESS_2_TAG, Address2);
+                if (!string.IsNullOrWhiteSpace(City)) writer.WriteElementString(CITY_TAG, City);
+                if (!string.IsNullOrWhiteSpace(StateProvince)) writer.WriteElementString(STATE_PROVINCE_TAG, StateProvince);
+                if (!string.IsNullOrWhiteSpace(ZipCode)) writer.WriteElementString(ZIP_CODE_TAG, ZipCode);
+                if (!string.IsNullOrWhiteSpace(Country)) writer.WriteElementString(COUNTRY_TAG, Country);
+                if (!string.IsNullOrWhiteSpace(PhoneNumber)) writer.WriteElementString(PHONE_NUMBER_TAG, PhoneNumber);
+                if (!string.IsNullOrWhiteSpace(FaxNumber)) writer.WriteElementString(FAX_NUMBER_TAG, FaxNumber);
+                if (!string.IsNullOrWhiteSpace(Email)) writer.WriteElementString(EMAIL_TAG, Email);
+                if (!string.IsNullOrWhiteSpace(AddressNumber)) writer.WriteElementString(ADDRESS_NUMBER_TAG, AddressNumber);
+                if (!string.IsNullOrWhiteSpace(UserID)) writer.WriteElementString(USER_ID_TAG, UserID);
 
                 writer.WriteEndElement();
                 writer.WriteEndDocument();

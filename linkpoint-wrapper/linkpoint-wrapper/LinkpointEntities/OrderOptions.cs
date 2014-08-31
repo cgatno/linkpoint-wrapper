@@ -28,8 +28,8 @@ namespace linkpoint_wrapper.LinkpointEntities
                 writer.WriteStartDocument();
                 writer.WriteStartElement(ORDER_OPTIONS_TAG);
 
-                writer.WriteElementString(ORDER_TYPE_TAG, OrderType.ToString());
-                writer.WriteElementString(ORDER_MODE_TAG, OrderMode.ToString());
+                if (OrderType != null) writer.WriteElementString(ORDER_TYPE_TAG, OrderType.ToString());
+                if (OrderMode != null) writer.WriteElementString(ORDER_MODE_TAG, OrderMode.ToString());
 
                 writer.WriteEndElement();
                 writer.WriteEndDocument();

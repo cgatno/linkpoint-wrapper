@@ -44,9 +44,9 @@ namespace linkpoint_wrapper.LinkpointEntities
                 writer.WriteStartDocument();
                 writer.WriteStartElement(MERCHANT_INFO_TAG);
 
-                writer.WriteElementString(STORE_NUMBER_TAG, StoreNumber);
-                writer.WriteElementString(SECURITY_CERTIFICATE_PATH_TAG, SecurityCertificatePath);
-                writer.WriteElementString(LINKPOINT_HOSTNAME_TAG, LinkpointHostname);
+                if (!string.IsNullOrWhiteSpace(StoreNumber)) writer.WriteElementString(STORE_NUMBER_TAG, StoreNumber);
+                if (!string.IsNullOrWhiteSpace(SecurityCertificatePath)) writer.WriteElementString(SECURITY_CERTIFICATE_PATH_TAG, SecurityCertificatePath);
+                if (!string.IsNullOrWhiteSpace(LinkpointHostname)) writer.WriteElementString(LINKPOINT_HOSTNAME_TAG, LinkpointHostname);
                 writer.WriteElementString(LINKPOINT_PORT_TAG, LinkpointPort.ToString());
 
                 writer.WriteEndElement();

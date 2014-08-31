@@ -88,16 +88,16 @@ namespace linkpoint_wrapper.LinkpointEntities
                 writer.WriteStartDocument();
                 writer.WriteStartElement(TRANSACTION_DETAILS_TAG);
 
-                writer.WriteElementString(TRANSACTION_ORIGIN_TAG, TransactionOrigin.ToString());
-                writer.WriteElementString(ORDER_ID_TAG, OrderID);
+                if (TransactionOrigin != null) writer.WriteElementString(TRANSACTION_ORIGIN_TAG, TransactionOrigin.ToString());
+                if (!string.IsNullOrWhiteSpace(OrderID)) writer.WriteElementString(ORDER_ID_TAG, OrderID);
                 writer.WriteElementString(TAX_EXEMPT_TAG, TaxExempt ? "y" : "n");
-                writer.WriteElementString(PURCHASE_ORDER_NUMBER_TAG, PurchaseOrderNumber);
-                writer.WriteElementString(INVOICE_NUMBER_TAG, InvoiceNumber);
-                writer.WriteElementString(TERMINAL_TYPE_TAG, TerminalType.ToString());
-                writer.WriteElementString(IP_ADDRESS_TAG, IPAddress.ToString());
-                writer.WriteElementString(REFERENCE_NUMBER_TAG, ReferenceNumber);
+                if (!string.IsNullOrWhiteSpace(PurchaseOrderNumber)) writer.WriteElementString(PURCHASE_ORDER_NUMBER_TAG, PurchaseOrderNumber);
+                if (!string.IsNullOrWhiteSpace(InvoiceNumber)) writer.WriteElementString(INVOICE_NUMBER_TAG, InvoiceNumber);
+                if (TerminalType != null) writer.WriteElementString(TERMINAL_TYPE_TAG, TerminalType.ToString());
+                if (IPAddress != null) writer.WriteElementString(IP_ADDRESS_TAG, IPAddress.ToString());
+                if (!string.IsNullOrWhiteSpace(ReferenceNumber)) writer.WriteElementString(REFERENCE_NUMBER_TAG, ReferenceNumber);
                 writer.WriteElementString(RECURRING_TAG, Recurring ? "Yes" : "No");
-                writer.WriteElementString(TDATE_TAG, tdate);
+                if (!string.IsNullOrWhiteSpace(tdate)) writer.WriteElementString(TDATE_TAG, tdate);
 
                 writer.WriteEndElement();
                 writer.WriteEndDocument();
