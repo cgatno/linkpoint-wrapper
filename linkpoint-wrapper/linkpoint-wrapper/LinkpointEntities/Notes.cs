@@ -7,7 +7,7 @@ using System.Xml;
 
 namespace linkpoint_wrapper.LinkpointEntities
 {
-    class Notes : ILinkpointEntity
+    public class Notes : ILinkpointEntity
     {
         private const string COMMENTS_TAG = "comments";
         public string Comments { get; set; }

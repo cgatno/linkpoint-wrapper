@@ -7,7 +7,7 @@ using System.Xml;
 
 namespace linkpoint_wrapper.LinkpointEntities
 {
-    class MerchantInfo : ILinkpointEntity
+    public class MerchantInfo : ILinkpointEntity
     {
         private const string STORE_NUMBER_TAG = "configfile";
         public string StoreNumber { get; set; }

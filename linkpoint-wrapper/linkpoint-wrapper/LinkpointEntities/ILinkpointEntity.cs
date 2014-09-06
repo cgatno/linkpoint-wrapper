@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace linkpoint_wrapper.LinkpointEntities
 {
-    interface ILinkpointEntity
+    public interface ILinkpointEntity
     {
         string EntityXML();
     }

@@ -9,7 +9,7 @@ using linkpoint_wrapper.LinkpointConstants;
 
 namespace linkpoint_wrapper.LinkpointEntities
 {
-    class OrderOptions : ILinkpointEntity
+    public class OrderOptions : ILinkpointEntity
     {
         private const string ORDER_TYPE_TAG = "ordertype";
         public OrderType OrderType { get; set; }

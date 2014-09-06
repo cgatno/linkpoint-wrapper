@@ -9,7 +9,7 @@ using linkpoint_wrapper.LinkpointConstants;
 
 namespace linkpoint_wrapper.LinkpointEntities
 {
-    class Periodic : ILinkpointEntity
+    public class Periodic : ILinkpointEntity
     {
         private const string ACTION_TAG = "action";
         public PeriodicAction Action { get; set; }

@@ -9,7 +9,7 @@ namespace linkpoint_wrapper
     /// <summary>
     /// Stores information necessary to connect to the Linkpoint server using a certain Linkpoint account
     /// </summary>
-    class LinkpointWrapperHelper
+    public class LinkpointWrapperHelper
     {
         /// <summary>
         /// The Linkpoint store number associated with your store/account

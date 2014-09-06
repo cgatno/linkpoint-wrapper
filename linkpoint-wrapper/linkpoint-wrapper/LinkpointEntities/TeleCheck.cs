@@ -9,7 +9,7 @@ using linkpoint_wrapper.LinkpointConstants;
 
 namespace linkpoint_wrapper.LinkpointEntities
 {
-    class TeleCheck : ILinkpointEntity
+    public class TeleCheck : ILinkpointEntity
     {
         private const string BANK_ACCOUNT_NUMBER_TAG = "account";
         public string BankAccountNumber { get; set; }

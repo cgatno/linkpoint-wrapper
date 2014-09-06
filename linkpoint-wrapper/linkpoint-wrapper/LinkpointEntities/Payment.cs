@@ -7,7 +7,7 @@ using System.Xml;
 
 namespace linkpoint_wrapper.LinkpointEntities
 {
-    class Payment : ILinkpointEntity
+    public class Payment : ILinkpointEntity
     {
         private const string SUBTOTAL_TAG = "subtotal";
         public decimal Subtotal { get; set; }

@@ -11,7 +11,7 @@ namespace linkpoint_wrapper
     /// <summary>
     /// A static class for quickly connecting and sending data to Linkpoint servers.
     /// </summary>
-    static class LinkpointServer
+    public static class LinkpointServer
     {
         /// <summary>
         /// Sends raw XML data to the Linkpoint servers using the parameters specified and gives the raw XML response.

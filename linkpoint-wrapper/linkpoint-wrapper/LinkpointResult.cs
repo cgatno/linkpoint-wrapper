@@ -9,7 +9,7 @@ using System.Xml.Linq;
 
 namespace linkpoint_wrapper
 {
-    class LinkpointResult
+    public class LinkpointResult
     {
         public enum TransactionResult
         {

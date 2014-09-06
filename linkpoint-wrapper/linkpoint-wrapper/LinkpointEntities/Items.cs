@@ -7,7 +7,7 @@ using System.Xml;
 
 namespace linkpoint_wrapper.LinkpointEntities
 {
-    class Items : ILinkpointEntity
+    public class Items : ILinkpointEntity
     {
         private const string ITEMS_ENTITY_TAG = "items";
         private const string ITEM_TAG = "item";

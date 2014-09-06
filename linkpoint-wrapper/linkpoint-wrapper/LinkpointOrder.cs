@@ -8,7 +8,7 @@ using linkpoint_wrapper.LinkpointEntities;
 
 namespace linkpoint_wrapper
 {
-    class LinkpointOrder
+    public class LinkpointOrder
     {
         private const string ORDER_TAG = "order";
 

@@ -9,7 +9,7 @@ using linkpoint_wrapper.LinkpointConstants;
 
 namespace linkpoint_wrapper.LinkpointEntities
 {
-    class CreditCard : ILinkpointEntity
+    public class CreditCard : ILinkpointEntity
     {
         private const string CARD_NUMBER_TAG = "cardnumber";
         public string CardNumber { get; set; }

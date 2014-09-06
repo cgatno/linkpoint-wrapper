@@ -10,7 +10,7 @@ using linkpoint_wrapper.LinkpointConstants;
 
 namespace linkpoint_wrapper.LinkpointEntities
 {
-    class TransactionDetails : ILinkpointEntity
+    public class TransactionDetails : ILinkpointEntity
     {
         private const string TRANSACTION_ORIGIN_TAG = "transactionorigin";
         public TransactionOrigin TransactionOrigin { get; set; }
