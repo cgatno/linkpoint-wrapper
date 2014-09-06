@@ -11,37 +11,37 @@ namespace linkpoint_wrapper.LinkpointEntities
 {
     class TeleCheck : ILinkpointEntity
     {
-        private string BANK_ACCOUNT_NUMBER_TAG = "account";
+        private const string BANK_ACCOUNT_NUMBER_TAG = "account";
         public string BankAccountNumber { get; set; }
 
-        private string BANK_ROUTING_NUMBER_TAG = "routing";
+        private const string BANK_ROUTING_NUMBER_TAG = "routing";
         public string BankRoutingNumber { get; set; }
 
-        private string CHECK_NUMBER_TAG = "checknumber";
+        private const string CHECK_NUMBER_TAG = "checknumber";
         public string CheckNumber { get; set; }
 
-        private string BANK_NAME_TAG = "bankname";
+        private const string BANK_NAME_TAG = "bankname";
         public string BankName { get; set; }
 
-        private string BANK_STATE_TAG = "bankstate";
+        private const string BANK_STATE_TAG = "bankstate";
         public string BankState { get; set; }
 
-        private string DRIVERS_LICENSE_NUMBER_TAG = "dl";
+        private const string DRIVERS_LICENSE_NUMBER_TAG = "dl";
         public string DriversLicenseNumber { get; set; }
 
-        private string DRIVERS_LICENSE_STATE_TAG = "dlstate";
+        private const string DRIVERS_LICENSE_STATE_TAG = "dlstate";
         public string DriversLicenseState { get; set; }
 
-        private string VOID_FLAG_TAG = "void";
+        private const string VOID_FLAG_TAG = "void";
         public bool VoidFlag { get; set; }
 
-        private string ACCOUNT_TYPE_FLAG = "accounttype";
+        private const string ACCOUNT_TYPE_FLAG = "accounttype";
         public AccountType AccountType { get; set; }
 
-        private string SOCIAL_SECURITY_NUMBER_TAG = "ssn";
+        private const string SOCIAL_SECURITY_NUMBER_TAG = "ssn";
         public string SocialSecurityNumber { get; set; }
 
-        private string TELE_CHECK_TAG = "telecheck";
+        private const string TELE_CHECK_TAG = "telecheck";
         public string EntityXML()
         {
             StringBuilder outputBuilder = new StringBuilder();
