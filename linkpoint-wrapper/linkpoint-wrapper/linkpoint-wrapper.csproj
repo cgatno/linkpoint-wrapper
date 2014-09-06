@@ -39,9 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LinkpointConstants\AccountType.cs" />
     <Compile Include="LinkpointConstants\CardCodeStatus.cs" />
     <Compile Include="LinkpointConstants\OrderMode.cs" />
     <Compile Include="LinkpointConstants\OrderType.cs" />
+    <Compile Include="LinkpointEntities\Periodic.cs" />
     <Compile Include="LinkpointConstants\TerminalType.cs" />
     <Compile Include="LinkpointConstants\TransactionOrigin.cs" />
     <Compile Include="LinkpointEntities\Billing.cs" />
@@ -51,6 +53,7 @@
     <Compile Include="LinkpointEntities\OrderOptions.cs" />
     <Compile Include="LinkpointEntities\Payment.cs" />
     <Compile Include="LinkpointEntities\Shipping.cs" />
+    <Compile Include="LinkpointEntities\TeleCheck.cs" />
     <Compile Include="LinkpointEntities\TransactionDetails.cs" />
     <Compile Include="LinkpointServer.cs" />
     <Compile Include="LinkpointWrapperHelper.cs" />
