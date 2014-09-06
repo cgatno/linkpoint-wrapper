@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3EBA3AC9-F1D0-4351-8E0D-010F99CA4F28}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>linkpoint_wrapper</RootNamespace>
+    <AssemblyName>linkpoint-wrapper</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LinkpointConstants\AccountType.cs" />
+    <Compile Include="LinkpointConstants\CardCodeStatus.cs" />
+    <Compile Include="LinkpointConstants\OrderMode.cs" />
+    <Compile Include="LinkpointConstants\OrderType.cs" />
+    <Compile Include="LinkpointConstants\PeriodicAction.cs" />
+    <Compile Include="LinkpointConstants\Periodicity.cs" />
+    <Compile Include="LinkpointEntities\Items.cs" />
+    <Compile Include="LinkpointEntities\Notes.cs" />
+    <Compile Include="LinkpointEntities\Periodic.cs" />
+    <Compile Include="LinkpointConstants\TerminalType.cs" />
+    <Compile Include="LinkpointConstants\TransactionOrigin.cs" />
+    <Compile Include="LinkpointEntities\Billing.cs" />
+    <Compile Include="LinkpointEntities\CreditCard.cs" />
+    <Compile Include="LinkpointEntities\ILinkpointEntity.cs" />
+    <Compile Include="LinkpointEntities\MerchantInfo.cs" />
+    <Compile Include="LinkpointEntities\OrderOptions.cs" />
+    <Compile Include="LinkpointEntities\Payment.cs" />
+    <Compile Include="LinkpointEntities\Shipping.cs" />
+    <Compile Include="LinkpointEntities\TeleCheck.cs" />
+    <Compile Include="LinkpointEntities\TransactionDetails.cs" />
+    <Compile Include="LinkpointOrder.cs" />
+    <Compile Include="LinkpointResult.cs" />
+    <Compile Include="LinkpointServer.cs" />
+    <Compile Include="LinkpointWrapperHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dependencies\LpiCom_6_0.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="LPICOM_6_0Lib">
+      <Guid>{1C0876A6-FF84-48E6-95BE-D3F21C883D14}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
