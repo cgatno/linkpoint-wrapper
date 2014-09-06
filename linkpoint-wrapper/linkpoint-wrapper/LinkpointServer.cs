@@ -24,7 +24,8 @@ namespace linkpoint_wrapper
         public static string SendXML(string CertificatePath, string Host, int Port, string XML)
         {
             LinkPointTxn txn = new LinkPointTxn();
-            return txn.send(CertificatePath, Host, Port, XML);
+            // We have to add our own parent tag as Linkpoint doesn't return XML with one
+            return "<result>" + txn.send(CertificatePath, Host, Port, XML) + "</result>";
         }
 
         /// <summary>
@@ -36,7 +37,8 @@ namespace linkpoint_wrapper
         public static string SendXML(LinkpointWrapperHelper WrapperHelper, string XML)
         {
             LinkPointTxn txn = new LinkPointTxn();
-            return txn.send(WrapperHelper.SecurityCertificatePath, WrapperHelper.LinkpointHostname, WrapperHelper.LinkpointPort, XML);
+            // We have to add our own parent tag as Linkpoint doesn't return XML with one
+            return "<result>" + txn.send(WrapperHelper.SecurityCertificatePath, WrapperHelper.LinkpointHostname, WrapperHelper.LinkpointPort, XML) + "</result>";
         }
 
         /// <summary>

@@ -60,6 +60,7 @@
     <Compile Include="LinkpointEntities\TeleCheck.cs" />
     <Compile Include="LinkpointEntities\TransactionDetails.cs" />
     <Compile Include="LinkpointOrder.cs" />
+    <Compile Include="LinkpointResult.cs" />
     <Compile Include="LinkpointServer.cs" />
     <Compile Include="LinkpointWrapperHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
