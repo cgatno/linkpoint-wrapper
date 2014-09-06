@@ -45,6 +45,7 @@
     <Compile Include="LinkpointConstants\OrderType.cs" />
     <Compile Include="LinkpointConstants\PeriodicAction.cs" />
     <Compile Include="LinkpointConstants\Periodicity.cs" />
+    <Compile Include="LinkpointEntities\Notes.cs" />
     <Compile Include="LinkpointEntities\Periodic.cs" />
     <Compile Include="LinkpointConstants\TerminalType.cs" />
     <Compile Include="LinkpointConstants\TransactionOrigin.cs" />
